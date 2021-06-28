@@ -1,4 +1,4 @@
-params_parse = function(){
+module.exports = function(){
     var args = process.argv;
     var result = {};
     for(var i = 0; i < args.length-1;i++){
@@ -8,4 +8,3 @@ params_parse = function(){
     }
     return result;
 };
-module.exports = params_parse;
